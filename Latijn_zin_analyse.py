@@ -2,6 +2,9 @@ import streamlit as st
 import spacy
 import pandas as pd
 from cltk import NLP
+import stanza
+
+stanza.download('en')
 
 cltk_nlp = NLP(language="lat")
 
