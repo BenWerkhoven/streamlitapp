@@ -3,8 +3,11 @@ import spacy
 import pandas as pd
 from cltk import NLP
 import stanza
+import urllib
 
 stanza.download('la')
+url = "https://dl.fbaipublicfiles.com/fasttext/vectors-wiki/wiki.la.vec"
+urllib.request.urlretrieve(url, "wiki.la.vec")
 
 cltk_nlp = NLP(language="lat")
 
