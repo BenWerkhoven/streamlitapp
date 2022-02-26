@@ -4,7 +4,7 @@ import pandas as pd
 from cltk import NLP
 import stanza
 
-stanza.download('en')
+stanza.download('la')
 
 cltk_nlp = NLP(language="lat")
 
